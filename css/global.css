@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.subtitulo {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 20px 5%;
+  border-bottom: 4px solid #e30000;
+}
+
+.detalhe-texto {
+  border-left: 4px solid #e30000;
+  padding-left: 10px;
+}

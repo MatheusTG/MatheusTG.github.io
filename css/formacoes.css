@@ -1,0 +1,94 @@
+.formacoes {
+  background: #141414;
+}
+
+.formacoes-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.capelo {
+  grid-column: 2;
+  grid-row: 1 / 5;
+  margin-top: 100px;
+}
+
+.formacoes .subtitulo {
+  justify-self: start;
+  color: white;
+}
+
+.formacao-titulo {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.formacao-curso {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  background: #262626;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.formacao-resumo {
+  grid-column: 1;
+  color: #bfbfbf;
+}
+
+.formacao-data {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+  color: #bfbfbf;
+}
+
+.idiomas-titulo {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #383838;
+  margin-bottom: 20px;
+}
+
+.idiomas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  margin-left: 40px;
+}
+
+.idioma {
+  position: relative;
+}
+
+.idioma::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 25%;
+  background: #e30000;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+
+.formacoes strong {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .formacoes-conteudo {
+    grid-template-columns: initial;
+  }
+
+  .capelo {
+    display: none;
+  }
+}

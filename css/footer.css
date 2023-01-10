@@ -1,0 +1,94 @@
+footer {
+  background: black;
+  color: white;
+  color: #bfbfbf;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  position: relative;
+}
+
+.contato::before {
+  content: "";
+  height: 20px;
+  width: 200px;
+  background: linear-gradient(#e30000, black);
+  border-radius: 5px;
+  position: absolute;
+  right: 40px;
+  top: -10px;
+}
+
+.mensagem {
+  font-size: 1.5rem;
+  max-width: 40ch;
+}
+
+.direitos {
+  align-self: end;
+}
+
+.contato-texto {
+  display: grid;
+  grid-column: 1 / 3;
+}
+
+.contato-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-email {
+  background: white;
+  color: #616161;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.input-mensagem {
+  background: white;
+  color: #616161;
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 16ch;
+}
+
+@media (max-width: 900px) {
+  .mensagem {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .contato {
+    grid-template-columns: 4fr 3fr;
+    gap: 10px;
+  }
+
+  .contato::before {
+    width: 150px;
+  }
+
+  .contato-texto {
+    grid-column: 1;
+  }
+
+  .mensagem {
+    font-size: 1rem;
+  }
+
+  .contato-input {
+    grid-column: 2;
+  }
+
+  .direitos {
+    font-size: .875rem;
+  }
+}
